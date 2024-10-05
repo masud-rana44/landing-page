@@ -258,3 +258,53 @@
 .signed-collection__image--your-next-move {
   height: 51.8rem;
 }
+
+/* QUOTE SECTION */
+.quote-section {
+  background: linear-gradient(90deg, #ec3339 0%, #bb1117 100%);
+}
+
+.quote-section__container {
+  display: flex;
+  align-items: center;
+}
+
+.quote-section__content {
+  position: relative;
+}
+
+.quote-section__icon {
+  position: absolute;
+  transform: translate(-20%, -65%);
+}
+
+.quote-section__text {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.024rem;
+  text-transform: uppercase;
+}
+
+.quote-section__image-wrapper {
+  position: relative;
+  height: 58rem;
+}
+
+.quote-section__image {
+  height: 72.5rem;
+  max-width: 57.1rem;
+  position: relative;
+  bottom: 0;
+  transform: translateY(-20%);
+}
+
+/* FOOTER */
+footer {
+  display: block;
+  height: 500px;
+  background: #111;
+  padding: 10rem 0;
+}

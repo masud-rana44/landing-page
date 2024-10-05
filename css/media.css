@@ -36,6 +36,15 @@
   .signed-collection__container {
     flex-direction: column-reverse;
   }
+
+  .quote-section__content {
+    margin-top: 20rem;
+  }
+
+  .quote-section__container {
+    flex-direction: column;
+    gap: 20rem;
+  }
 }
 
 /* Large Tablets (768px and above) */
@@ -152,6 +161,22 @@
 
   .best-selling__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .quote-section__icon {
+    height: 12rem;
+  }
+
+  .quote-section__text {
+    font-size: 3.6rem;
+  }
+
+  .quote-section__image-wrapper {
+    height: 40rem;
+  }
+
+  .quote-section__image {
+    height: 50rem;
   }
 }
 
