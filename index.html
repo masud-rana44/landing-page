@@ -1,13 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Landing Page Design</title>
   </head>
   <body>
-    <div id="app"></div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <header class="hero__header container">
+        <div class="hero__logo">
+          <img src="./assets/logo/Valuetainment.svg" alt="Valuetainment Logo" />
+          <h1 class="hero__brand">VTMERCH</h1>
+        </div>
+
+        <button class="hero__menu-icon" aria-label="Open Menu">
+          <img src="./assets/icon/menu.svg" alt="Menu Icon" />
+        </button>
+      </header>
+
+      <div class="hero__slider">
+        <h2 class="hero__tagline">Future Looks Bright!</h2>
+
+        <!-- Card 1 -->
+        <div class="hero__slider-container">
+          <article class="hero__slider-card">
+            <img
+              class="hero__slider-image"
+              src="./assets/img/img-1.png"
+              alt="Army Green Active Short Sleeve"
+            />
+            <h3 class="hero__slider-title">Army Green Active Short Sleeve</h3>
+            <div class="hero__price-container">
+              <span class="hero__price--active">$ 34.95</span>
+              <span class="hero__price--regular">$ 34.95</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="hero__slider-card">
+            <img
+              class="hero__slider-image"
+              src="./assets/img/img-2.png"
+              alt="Army Green Active Short Sleeve"
+            />
+            <h3 class="hero__slider-title">Army Green Active Short Sleeve</h3>
+            <div class="hero__price-container">
+              <span class="hero__price--active">$ 34.95</span>
+              <span class="hero__price--regular">$ 34.95</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="hero__slider-card">
+            <img
+              class="hero__slider-image"
+              src="./assets/img/img-3.jpeg"
+              alt="Army Green Active Short Sleeve"
+            />
+            <h3 class="hero__slider-title">Army Green Active Short Sleeve</h3>
+            <div class="hero__price-container">
+              <span class="hero__price--active">$ 34.95</span>
+              <span class="hero__price--regular">$ 34.95</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="hero__slider-card">
+            <img
+              class="hero__slider-image"
+              src="./assets/img/img-4.png"
+              alt="Army Green Active Short Sleeve"
+            />
+            <h3 class="hero__slider-title">Army Green Active Short Sleeve</h3>
+            <div class="hero__price-container">
+              <span class="hero__price--active">$ 34.95</span>
+              <span class="hero__price--regular">$ 34.95</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="hero__slider-card">
+            <img
+              class="hero__slider-image"
+              src="./assets/img/img-3.jpeg"
+              alt="Army Green Active Short Sleeve"
+            />
+            <h3 class="hero__slider-title">Army Green Active Short Sleeve</h3>
+            <div class="hero__price-container">
+              <span class="hero__price--active">$ 34.95</span>
+              <span class="hero__price--regular">$ 34.95</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

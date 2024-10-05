@@ -1,0 +1,66 @@
+/* Font Face Declarations */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/font/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/font/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/font/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Act Of Rejection";
+  src: url("../assets/font/Act_Of_Rejection.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Typography */
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/**************************/
+/* GENERAL REUSABLE STYLES */
+/**************************/
+.container {
+  max-width: 162rem;
+  margin: 0 auto;
+}
