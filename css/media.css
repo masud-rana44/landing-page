@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 1500px) {
-  .hero__header {
+  .container {
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -27,6 +27,10 @@
   .hero__slider {
     margin-left: 10rem;
     width: calc(100% - 10rem);
+  }
+
+  .best-selling__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -51,6 +55,14 @@
 
   .hero__slider-container {
     flex-wrap: wrap;
+  }
+
+  .best-selling__title {
+    font-size: 5rem;
+  }
+
+  .best-selling__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -82,6 +94,10 @@
 
   .hero__tagline {
     font-size: 6rem;
+  }
+
+  .best-selling__title {
+    font-size: 4rem;
   }
 }
 
@@ -116,6 +132,10 @@
     gap: 4rem;
     padding-bottom: 10rem;
   }
+
+  .best-selling__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 450px) {
@@ -135,5 +155,9 @@
 
   .hero__tagline {
     font-size: 3.6rem;
+  }
+
+  .best-selling__title {
+    font-size: 2.2rem;
   }
 }
