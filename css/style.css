@@ -25,10 +25,10 @@
 
 .hero__brand {
   color: #fff;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 11.2rem;
   font-weight: 800;
-  line-height: 120%; /* 13.44rem */
+  line-height: 120%;
   letter-spacing: 1.2rem;
 }
 
@@ -53,12 +53,13 @@
   font-size: 14rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 16.8rem */
+  line-height: 120%;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 
   position: absolute;
   transform: translate(-3%, -60%);
+  animation: slideInLeft 2s forwards;
 }
 
 .hero__slider-container {
@@ -66,6 +67,7 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
+  animation: slideInRight 2s forwards;
 }
 
 .hero__slider-image {
@@ -79,7 +81,7 @@
   color: #fff;
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 120%; /* 1.92rem */
+  line-height: 120%;
   letter-spacing: 0.008rem;
   margin-top: 1.6rem;
 }
@@ -88,7 +90,7 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 2rem;
   font-weight: 500;
-  line-height: 120%; /* 2.4rem */
+  line-height: 120%;
   letter-spacing: 0.01rem;
   margin-top: 1.2rem;
 
@@ -113,7 +115,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 7rem;
   font-weight: 600;
-  line-height: 120%; /* 8.4rem */
+  line-height: 120%;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
@@ -131,6 +133,11 @@
   color: transparent;
   border: none;
   -webkit-text-stroke: 1px #060606;
+  transition: all 0.2s;
+}
+
+.best-selling__title:hover .best-selling__title--description {
+  -webkit-text-stroke: 1px #bb1117;
 }
 
 .best-selling__grid {
@@ -144,6 +151,13 @@
   padding: 1.6rem 1.6rem 2.4rem 1.6rem;
   border-radius: 1.2rem;
   background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.best-selling__card:hover {
+  background: #ec3339;
+  color: #fff;
 }
 
 .best-selling__card-image {
@@ -221,6 +235,13 @@
   border-radius: 1.2rem;
   background: #fff;
   margin-top: 4.8rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.signed-collection__button:hover {
+  opacity: 95%;
+  transform: translateY(2px);
 }
 
 .signed-collection__button-label {
@@ -383,6 +404,13 @@
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.008rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.footer__submit:hover {
+  opacity: 95%;
+  transform: translateY(2px);
 }
 
 .footer__section-title {
@@ -468,4 +496,27 @@
 .footer__payment-options img {
   width: 3.2rem;
   height: auto;
+}
+
+/* ANIMATION */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate(-100%, -60%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-3%, -60%);
+    opacity: 1;
+  }
 }
