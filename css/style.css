@@ -1,3 +1,4 @@
+/* HERO SECTION */
 .hero {
   background-color: #ea2127;
   min-height: 100vh;
@@ -97,5 +98,78 @@
 }
 
 .hero__price--regular {
+  text-decoration: line-through;
+}
+
+/* BEST SELLING */
+.best-selling {
+  background: #f6f5f5;
+  padding: 10rem 0;
+  color: #060606;
+}
+
+.best-selling__title {
+  -webkit-text-stroke-width: 1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 120%; /* 8.4rem */
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.best-selling__title--offer {
+  display: block;
+}
+
+.best-selling__title--description {
+  font-family: "Inter", sans-serif;
+  background: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  border: none;
+  -webkit-text-stroke: 1px #060606;
+}
+
+.best-selling__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  margin-top: 4.8rem;
+}
+
+.best-selling__card {
+  padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+  border-radius: 1.2rem;
+  background: #fff;
+}
+
+.best-selling__card-image {
+  width: 100%;
+  height: 33.3rem;
+}
+
+.best-selling__card-title {
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.008rem;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.best-selling__price {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.01rem;
+  margin-top: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.best-selling__price--regular {
+  color: #9b9b9b;
   text-decoration: line-through;
 }

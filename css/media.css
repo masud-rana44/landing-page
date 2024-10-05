@@ -1,5 +1,4 @@
 /* Media Queries for Responsive Design */
-
 @media (max-width: 1700px) {
   html {
     font-size: 56.25%; /* 1rem = 9px */
