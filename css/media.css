@@ -77,6 +77,15 @@
   .best-selling__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer__content {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
+  }
+
+  .footer__subscription {
+    grid-column: 1 / span 3;
+  }
 }
 
 /* Small Tablets (600px and above) */
@@ -124,6 +133,14 @@
 
   .signed-collection__image--primary {
     height: 15rem;
+  }
+
+  .footer__logo {
+    width: 7.2rem;
+  }
+
+  .footer__brand-name {
+    font-size: 8rem;
   }
 }
 
@@ -178,6 +195,22 @@
   .quote-section__image {
     height: 50rem;
   }
+
+  .footer__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__subscription {
+    grid-column: 1 / span 1;
+  }
+
+  .footer__logo {
+    width: 5.2rem;
+  }
+
+  .footer__brand-name {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -222,5 +255,13 @@
   .signed-collection__image--secondary {
     width: 100%;
     height: 100%;
+  }
+
+  .footer__logo {
+    width: 3.2rem;
+  }
+
+  .footer__brand-name {
+    font-size: 4rem;
   }
 }
