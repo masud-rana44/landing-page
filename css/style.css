@@ -101,7 +101,7 @@
   text-decoration: line-through;
 }
 
-/* BEST SELLING */
+/* BEST SELLING SECTION*/
 .best-selling {
   background: #f6f5f5;
   padding: 10rem 0;
@@ -125,7 +125,9 @@
 .best-selling__title--description {
   font-family: "Inter", sans-serif;
   background: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   border: none;
   -webkit-text-stroke: 1px #060606;
@@ -172,4 +174,87 @@
 .best-selling__price--regular {
   color: #9b9b9b;
   text-decoration: line-through;
+}
+
+/* SIGNED SECTION*/
+.signed-collection {
+  background: #111;
+  padding: 10rem 0;
+}
+
+.signed-collection__container {
+  display: flex;
+  align-items: center;
+  gap: 8.5rem;
+}
+
+.signed-collection__title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.9rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.signed-collection__title--main {
+  font-size: 7rem;
+  font-weight: 700;
+  display: block;
+}
+
+.signed-collection__text {
+  display: block;
+  margin-top: 2.4rem;
+  background: linear-gradient(180deg, #de2a2f 0%, #ef5256 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.signed-collection__button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  margin-top: 4.8rem;
+}
+
+.signed-collection__button-label {
+  color: #000;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.008rem;
+}
+
+.signed-collection__button-icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.signed-collection__image--primary {
+  height: 22.3rem;
+  flex-shrink: 0;
+  margin-top: 2.5rem;
+}
+
+.signed-collection__media {
+  height: 58.8rem;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.signed-collection__image--secondary {
+  height: 100%;
+}
+
+.signed-collection__image--your-next-move {
+  height: 51.8rem;
 }
